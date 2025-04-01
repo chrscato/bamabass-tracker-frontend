@@ -1,12 +1,13 @@
 import Dashboard from "@/components/Dashboard"
+import Layout from "@/components/Layout"
 
 export default function Home() {
   return (
-    <div className="bg-gray-100 min-h-screen">
-      <div className="max-w-5xl mx-auto">
-        <h1 className="text-4xl font-bold text-center py-6">📊 BamaBass Tracker Insights</h1>
+    <Layout title="Dashboard | BamaBass Tracker">
+      <div className="max-w-6xl mx-auto px-4 py-6">
+        <h1 className="text-3xl font-bold mb-6 text-center">📊 BamaBass Tracker Insights</h1>
         <Dashboard />
       </div>
-    </div>
+    </Layout>
   )
 }
